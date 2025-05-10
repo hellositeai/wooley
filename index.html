@@ -1,397 +1,230 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wooley - walking dogs service</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <style>
-      :root {
-        --color-1: #33744b;
-        --color-2: #e0ece3;
-        --color-3: #79a488;
-        --color-4: #93bea5;
-        --color-5: #89bd99;
-      }
-      .bg-primary {
-        background-color: var(--color-1);
-      }
-      .text-primary {
-        color: var(--color-1);
-      }
-      .text-primary-secondary {
-        color: var(--color-4);
-      }
-      .text-muted {
-        color: var(--color-3);
-      }
-      .bg-muted {
-        background-color: var(--color-2);
-      }
-      .bg-secondary {
-        background-color: var(--color-4);
-      }
-      .text-secondary {
-        color: var(--color-4);
-      }
-      .text-secondary-dark {
-        color: var(--color-3);
-      }
-      .btn-primary {
-        background-color: var(--color-1);
-        color: var(--color-2);
-      }
-      .btn-primary:hover {
-        opacity: 0.9;
-      }
-      .underline-primary {
-        text-decoration: underline;
-        text-decoration-color: var(--color-4);
-        text-underline-offset: 4px;
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-900 font-sans leading-relaxed">
-    <header
-      id="header"
-      class="relative w-full z-15 px-4 sm:px-6 bg-[var(--color-1)] text-white"
-    >
-      <div class="max-w-[250px] mx-auto pt-4">
-        <img
-          id="header-img-1"
-          src="https://api.telegram.org/file/bot7894873775:AAGCgkDHqBc_JQfl3ophu3EFy-B0HFyjFHo/photos/file_49.jpg"
-          alt="New Logo"
-          class="mx-auto max-w-[250px] max-h-[100px] object-contain"
-        />
-      </div>
-      <nav
-        id="header-nav-1"
-        class="max-w-[1200px] mx-auto mt-2 flex justify-center gap-6 pb-4"
-      >
-        <a
-          id="header-link-1"
-          href="#hero"
-          class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition active:bg-[var(--color-5)]"
-          >Contact us</a
-        >
-        <a
-          id="header-link-2"
-          href="#services"
-          class="px-4 py-2 rounded-full bg-white/10 text-[var(--color-primary)] hover:bg-opacity-20 transition"
-          >Contact Us</a
-        >
-        <a
-          id="header-link-3"
-          href="#pricing"
-          class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition"
-          >Pricing</a
-        >
-        <a
-          id="header-link-4"
-          href="#about"
-          class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition"
-          >About Us</a
-        >
-        <a
-          id="header-link-5"
-          href="#footer"
-          class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition"
-          >Contact</a
-        >
-      </nav>
-    </header>
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wooley - walking dogs</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root {
+    --color-1: #4a6b58;
+    --color-2: #d9e3d9;
+    --color-3: #7ea18a;
+    --color-4: #8cae9a;
+    --color-5: #9bb79f;
+  }
+  .bg-primary {
+    background-color: var(--color-1);
+  }
+  .text-primary {
+    color: var(--color-1);
+  }
+  .bg-secondary {
+    background-color: var(--color-5);
+  }
+  .text-secondary {
+    color: var(--color-5);
+  }
+  .bg-muted {
+    background-color: var(--color-2);
+  }
+  .text-muted {
+    color: var(--color-4);
+  }
+  .bg-cta {
+    background-color: var(--color-3);
+  }
+  .text-cta {
+    color: var(--color-3);
+  }
+  .bg-cta-hover:hover {
+    background-color: var(--color-4);
+  }
+</style>
+</head>
+<body class="bg-white text-gray-900">
 
-    <section
-      id="hero"
-      class="relative w-full min-h-screen max-h-[100vh] bg-fixed bg-center bg-cover flex flex-col justify-center items-center text-center px-4 sm:px-6"
-      style="
-        background-image: url('https://images.unsplash.com/photo-1735597403677-2029485b4547?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwxfHxQZXQlMjBTZXJ2aWNlc3xlbnwwfHx8fDE3NDY4MTg3MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080');
-      "
-    >
-      <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-      <h1
-        id="hero-text-1"
-        class="relative z-10 text-white text-4xl sm:text-5xl md:text-6xl font-extrabold max-w-4xl leading-tight mb-6"
-      >
-        Cats
-      </h1>
-      <p
-        id="hero-text-2"
-        class="relative z-10 text-white text-lg sm:text-xl max-w-xl mb-8"
-      >
-        walking dogs service
+<header id="header" class="absolute top-0 left-0 w-full z-15 px-4 sm:px-6">
+  <div class="max-w-[250px] mx-auto pt-4">
+    <img id="header-img-1" src="https://api.telegram.org/file/bot7894873775:AAGCgkDHqBc_JQfl3ophu3EFy-B0HFyjFHo/photos/file_52.jpg" alt="Wooley Logo" class="mx-auto max-w-[250px] max-h-[100px] object-contain" loading="lazy">
+  </div>
+  <nav id="header-nav-1" class="max-w-[1200px] mx-auto mt-2 flex justify-center gap-6 pb-4">
+    <a id="header-link-1" href="#hero" class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition active:bg-[var(--color-5)]" aria-current="page">Home</a>
+    <a id="header-link-2" href="#services" class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition">Services</a>
+    <a id="header-link-3" href="#pricing" class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition">Pricing</a>
+    <a id="header-link-4" href="#about" class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition">About</a>
+    <a id="header-link-5" href="#contacts" class="px-4 py-2 rounded-full bg-white/10 text-white hover:bg-opacity-20 transition">Contact</a>
+  </nav>
+</header>
+
+<section id="hero" class="relative flex flex-col justify-center items-center text-center text-white px-4 sm:px-6" style="min-height:100vh; max-height:100vh;">
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0" aria-hidden="true"></div>
+  <div class="absolute inset-0 bg-fixed bg-center bg-cover z-[-1]" style="background-image: url('https://images.unsplash.com/photo-1625321150203-cea4bee44b54?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwxfHxQZXQlMjBDYXJlfGVufDB8fHx8MTc0NjgzMjk0Mnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080');"></div>
+  <h1 id="hero-text-1" class="relative z-10 text-4xl sm:text-5xl md:text-6xl font-extrabold max-w-4xl leading-tight">
+    Wooley
+  </h1>
+  <p id="hero-text-2" class="relative z-10 mt-4 text-lg sm:text-xl max-w-xl font-semibold">
+    walking dogs
+  </p>
+  <a id="hero-link-1" href="#services" class="relative z-10 mt-8 inline-block px-8 py-3 rounded-full bg-[var(--color-5)] text-white font-semibold hover:opacity-90 transition">Explore Services</a>
+</section>
+
+<section id="services" class="px-4 sm:px-6 py-16 max-w-[1200px] mx-auto">
+  <h2 id="services-text-1" class="text-primary text-3xl sm:text-4xl font-bold text-center mb-12">
+    Our Services
+  </h2>
+  <div data-array="true" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <article id="services-article-1" class="bg-[var(--color-2)] rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img id="services-img-1" src="https://images.unsplash.com/photo-1581888227599-779811939961?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwyfHxQZXQlMjBDYXJlfGVufDB8fHx8MTc0NjgzMjk0Mnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Dog Walking" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
+      <h3 id="services-text-2" class="text-primary text-xl font-semibold mb-2">
+        Dog Walking
+      </h3>
+      <p id="services-text-3" class="text-muted mb-4">
+        Enjoy daily walks tailored to your dog's needs and energy level.
       </p>
-      <a
-        id="hero-link-1"
-        href="#services"
-        class="relative z-10 bg-[var(--color-5)] text-white px-8 py-3 rounded-full font-semibold text-lg hover:opacity-90 transition"
-        >Explore Our Services</a
-      >
-    </section>
-
-    <section id="services" class="px-4 sm:px-6 py-16 bg-[var(--color-2)]">
-      <h2
-        id="services-text-1"
-        class="text-primary text-3xl sm:text-4xl font-bold text-center mb-12"
-      >
-        Our Services
-      </h2>
-      <div
-        data-array="true"
-        class="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
-      >
-        <article
-          id="services-article-1"
-          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
-        >
-          <img
-            id="services-img-1"
-            src="https://images.unsplash.com/photo-1695671768428-5a90d1290682?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwyfHxQZXQlMjBTZXJ2aWNlc3xlbnwwfHx8fDE3NDY4MTg3MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
-            alt="Dog Walking"
-            class="rounded-md mb-5 w-full h-48 object-cover"
-          />
-          <h3
-            id="services-text-2"
-            class="text-primary text-xl font-semibold mb-3"
-          >
-            Daily Dog Walks
-          </h3>
-          <p id="services-text-3" class="text-muted mb-4">
-            Regular walks to keep your dog happy and healthy.
-          </p>
-          <i class="fa-solid fa-walking text-[var(--color-1)] text-3xl"></i>
-        </article>
-        <article
-          id="services-article-2"
-          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
-        >
-          <img
-            id="services-img-2"
-            src="https://images.unsplash.com/photo-1558576996-06304651ef63?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwzfHxQZXQlMjBTZXJ2aWNlc3xlbnwwfHx8fDE3NDY4MTg3MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
-            alt="Puppy Sitting"
-            class="rounded-md mb-5 w-full h-48 object-cover"
-          />
-          <h3
-            id="services-text-4"
-            class="text-primary text-xl font-semibold mb-3"
-          >
-            Puppy Sitting
-          </h3>
-          <p id="services-text-5" class="text-muted mb-4">
-            Caring and playful sitting for your young pets.
-          </p>
-          <i class="fa-solid fa-dog text-[var(--color-1)] text-3xl"></i>
-        </article>
-        <article
-          id="services-article-3"
-          class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center"
-        >
-          <img
-            id="services-img-3"
-            src="https://images.unsplash.com/photo-1631142484014-64fb692e975c?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHw0fHxQZXQlMjBTZXJ2aWNlc3xlbnwwfHx8fDE3NDY4MTg3MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
-            alt="Group Walks"
-            class="rounded-md mb-5 w-full h-48 object-cover"
-          />
-          <h3
-            id="services-text-6"
-            class="text-primary text-xl font-semibold mb-3"
-          >
-            Group Walks
-          </h3>
-          <p id="services-text-7" class="text-muted mb-4">
-            Social walks to help your dog make new friends.
-          </p>
-          <i class="fa-solid fa-users text-[var(--color-1)] text-3xl"></i>
-        </article>
+      <div class="text-primary text-2xl">
+        <i class="fas fa-walking"></i>
       </div>
-    </section>
+    </article>
 
-    <section id="pricing" class="px-4 sm:px-6 py-16 bg-white">
-      <h2
-        id="pricing-text-1"
-        class="text-primary text-3xl sm:text-4xl font-bold text-center mb-12"
-      >
-        Pricing
-      </h2>
-      <div
-        data-array="true"
-        class="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8"
-      >
-        <article
-          id="pricing-article-1"
-          class="border border-[var(--color-3)] rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition"
-        >
-          <h3
-            id="pricing-text-2"
-            class="text-primary text-2xl font-semibold mb-4"
-          >
-            Daily Walk
-          </h3>
-          <p id="pricing-text-3" class="text-muted mb-6">30 minutes walk</p>
-          <p id="pricing-text-4" class="text-primary text-3xl font-bold mb-4">
-            $12
-          </p>
-          <ul id="pricing-list-1" class="text-muted mb-6 space-y-2">
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i
-              >Flexible scheduling
-            </li>
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i>GPS
-              tracking
-            </li>
-          </ul>
-          <button
-            class="bg-primary text-white px-6 py-2 rounded-full hover:opacity-90 transition"
-          >
-            Book Now
-          </button>
-        </article>
-        <article
-          id="pricing-article-2"
-          class="border border-[var(--color-3)] rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition"
-        >
-          <h3
-            id="pricing-text-5"
-            class="text-primary text-2xl font-semibold mb-4"
-          >
-            Puppy Sitting
-          </h3>
-          <p id="pricing-text-6" class="text-muted mb-6">Hourly care</p>
-          <p id="pricing-text-7" class="text-primary text-3xl font-bold mb-4">
-            $15/hr
-          </p>
-          <ul id="pricing-list-2" class="text-muted mb-6 space-y-2">
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i
-              >Playtime included
-            </li>
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i
-              >Feeding &amp; medication
-            </li>
-          </ul>
-          <button
-            class="bg-primary text-white px-6 py-2 rounded-full hover:opacity-90 transition"
-          >
-            Book Now
-          </button>
-        </article>
-        <article
-          id="pricing-article-3"
-          class="border border-[var(--color-3)] rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition"
-        >
-          <h3
-            id="pricing-text-8"
-            class="text-primary text-2xl font-semibold mb-4"
-          >
-            Group Walk
-          </h3>
-          <p id="pricing-text-9" class="text-muted mb-6">45 minutes walk</p>
-          <p id="pricing-text-10" class="text-primary text-3xl font-bold mb-4">
-            $25
-          </p>
-          <ul id="pricing-list-3" class="text-muted mb-6 space-y-2">
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i
-              >Socialization benefits
-            </li>
-            <li>
-              <i class="fa-solid fa-check text-[var(--color-5)] mr-2"></i>Safe
-              group size
-            </li>
-          </ul>
-          <button
-            class="bg-primary text-white px-6 py-2 rounded-full hover:opacity-90 transition"
-          >
-            Book Now
-          </button>
-        </article>
+    <article id="services-article-2" class="bg-[var(--color-2)] rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img id="services-img-2" src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHwzfHxQZXQlMjBDYXJlfGVufDB8fHx8MTc0NjgzMjk0Mnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Grooming" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
+      <h3 id="services-text-4" class="text-primary text-xl font-semibold mb-2">
+        Grooming
+      </h3>
+      <p id="services-text-5" class="text-muted mb-4">
+        Professional grooming services to keep your pet looking and feeling their best.
+      </p>
+      <div class="text-primary text-2xl">
+        <i class="fas fa-home"></i>
       </div>
-    </section>
+    </article>
 
-    <section id="about" class="px-4 sm:px-6 py-16 bg-[var(--color-2)]">
-      <h2
-        id="about-text-1"
-        class="text-primary text-3xl sm:text-4xl font-bold text-center mb-12"
-      >
-        About Us
-      </h2>
-      <div
-        class="max-w-[1200px] mx-auto flex flex-col lg:flex-row items-center gap-12"
-      >
-        <img
-          id="about-img-1"
-          src="https://images.unsplash.com/photo-1605645795652-06c3b94797d6?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHw1fHxQZXQlMjBTZXJ2aWNlc3xlbnwwfHx8fDE3NDY4MTg3MDh8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080"
-          alt="Wooley Team"
-          class="rounded-lg w-full max-w-md object-cover shadow-lg"
-        />
-        <article
-          id="about-article-1"
-          class="text-center lg:text-left max-w-xl px-4"
-        >
-          <p id="about-text-2" class="text-muted mb-6 text-lg leading-relaxed">
-            Wooley is a passionate team dedicated to providing loving and
-            professional dog walking and pet care services. We believe every dog
-            deserves daily exercise, socialization, and care tailored to their
-            unique needs.
-          </p>
-          <p id="about-text-3" class="text-muted text-lg leading-relaxed">
-            Our experienced walkers and sitters treat your pets like family,
-            ensuring peace of mind while you're away. Join the Wooley family and
-            give your dog the care they deserve.
-          </p>
-        </article>
+    <article id="services-article-3" class="bg-[var(--color-2)] rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img id="services-img-3" src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHw0fHxQZXQlMjBDYXJlfGVufDB8fHx8MTc0NjgzMjk0Mnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="Training" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
+      <h3 id="services-text-6" class="text-primary text-xl font-semibold mb-2">
+        Training
+      </h3>
+      <p id="services-text-7" class="text-muted mb-4">
+        Basic obedience and behavioral training to keep your dog happy and well-mannered.
+      </p>
+      <div class="text-primary text-2xl">
+        <i class="fas fa-dog"></i>
       </div>
-    </section>
+    </article>
+  </div>
+</section>
 
-    <footer id="footer" class="bg-muted px-4 sm:px-6 py-6">
-      <div
-        class="max-w-[1200px] mx-auto flex flex-col sm:flex-row justify-between items-center"
-        style="color: #6b6b6b"
-      >
-        <p id="footer-text-1" class="mb-4 sm:mb-0 text-sm">
-          © 2024 Wooley. All rights reserved.
+<section id="pricing" class="bg-[var(--color-2)] px-4 sm:px-6 py-16">
+  <div class="max-w-[1200px] mx-auto text-center">
+    <h2 id="pricing-text-1" class="text-primary text-3xl sm:text-4xl font-bold mb-12">
+      Pricing
+    </h2>
+    <div data-array="true" class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <article id="pricing-article-1" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <h3 id="pricing-text-2" class="text-primary text-xl font-semibold mb-4">
+          Dog Walking
+        </h3>
+        <p id="pricing-text-3" class="text-muted mb-6">
+          30 minutes walk - $20
         </p>
-        <div
-          id="footer-social"
-          class="flex gap-6 text-2xl"
-          style="color: #6b6b6b"
-        >
-          <a
-            id="footer-link-1"
-            href="#"
-            aria-label="Facebook"
-            class="hover:opacity-80"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a
-            id="footer-link-2"
-            href="#"
-            aria-label="Twitter"
-            class="hover:opacity-80"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a
-            id="footer-link-3"
-            href="#"
-            aria-label="Instagram"
-            class="hover:opacity-80"
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            id="footer-link-4"
-            href="#"
-            aria-label="LinkedIn"
-            class="hover:opacity-80"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
-  </body>
-</html>
+        <p id="pricing-text-4" class="text-muted mb-6">
+          60 minutes walk - $35
+        </p>
+        <a id="pricing-link-1" href="#contacts" class="mt-auto inline-block px-6 py-2 rounded-full bg-primary text-white font-semibold hover:opacity-90 transition">Book Now</a>
+      </article>
+
+      <article id="pricing-article-2" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <h3 id="pricing-text-5" class="text-primary text-xl font-semibold mb-4">
+          Pet Sitting
+        </h3>
+        <p id="pricing-text-6" class="text-muted mb-6">
+          Per day - $50
+        </p>
+        <p id="pricing-text-7" class="text-muted mb-6">
+          Weekend package - $90
+        </p>
+        <a id="pricing-link-2" href="#contacts" class="mt-auto inline-block px-6 py-2 rounded-full bg-primary text-white font-semibold hover:opacity-90 transition">Book Now</a>
+      </article>
+
+      <article id="pricing-article-3" class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+        <h3 id="pricing-text-8" class="text-primary text-xl font-semibold mb-4">
+          Training
+        </h3>
+        <p id="pricing-text-9" class="text-muted mb-6">
+          Per session (1 hour) - $40
+        </p>
+        <p id="pricing-text-10" class="text-muted mb-6">
+          Package of 5 sessions - $180
+        </p>
+        <a id="pricing-link-3" href="#contacts" class="mt-auto inline-block px-6 py-2 rounded-full bg-primary text-white font-semibold hover:opacity-90 transition">Book Now</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="px-4 sm:px-6 py-16 max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-12">
+  <div class="md:w-1/2">
+    <img id="about-img-1" src="https://images.unsplash.com/photo-1545529468-42764ef8c85f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3MzgzMzd8MHwxfHNlYXJjaHw1fHxQZXQlMjBDYXJlfGVufDB8fHx8MTc0NjgzMjk0Mnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080" alt="About Wooley" class="rounded-lg shadow-lg w-full object-cover max-h-[400px]" loading="lazy">
+  </div>
+  <article class="md:w-1/2 text-center md:text-left">
+    <h2 id="about-text-1" class="text-primary text-3xl sm:text-4xl font-bold mb-6">
+      About Wooley
+    </h2>
+    <p id="about-text-2" class="text-muted text-lg leading-relaxed">
+      Wooley is dedicated to providing loving and professional dog walking,
+      pet sitting, and training services. Our experienced team ensures your
+      furry friend receives the best care, exercise, and attention while you
+      are away or busy. We believe every dog deserves happiness and health,
+      and we strive to make that happen every day.
+    </p>
+  </article>
+</section>
+
+<section id="contacts" class="bg-[var(--color-2)] px-4 sm:px-6 py-16 max-w-[1200px] mx-auto">
+  <h2 id="contacts-text-1" class="text-primary text-3xl sm:text-4xl font-bold text-center mb-12">
+    Contact Us
+  </h2>
+  <div class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+    <div id="contacts-article-1" class="flex flex-col items-center">
+      <i class="fas fa-phone text-primary text-3xl mb-3"></i>
+      <h3 id="contacts-text-2" class="text-primary font-semibold mb-1">
+        Phone
+      </h3>
+      <a id="contacts-link-1" href="tel:+1234567890" class="text-muted hover:text-primary transition">+1 (234) 567-890</a>
+    </div>
+    <div id="contacts-article-2" class="flex flex-col items-center">
+      <i class="fas fa-envelope text-primary text-3xl mb-3"></i>
+      <h3 id="contacts-text-3" class="text-primary font-semibold mb-1">
+        Email
+      </h3>
+      <a id="contacts-link-2" href="mailto:info@wooley.com" class="text-muted hover:text-primary transition">info@wooley.com</a>
+    </div>
+    <div id="contacts-article-3" class="flex flex-col items-center">
+      <i class="fas fa-location-dot text-primary text-3xl mb-3"></i>
+      <h3 id="contacts-text-4" class="text-primary font-semibold mb-1">
+        Location
+      </h3>
+      <address id="contacts-text-5" class="not-italic text-muted">
+        123 Wooley St,<br>
+        Petville, PA 12345
+      </address>
+    </div>
+  </div>
+</section>
+
+<footer id="footer" class="bg-muted px-4 sm:px-6 py-6">
+  <div class="max-w-[1200px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-primary">
+    <p id="footer-text-1" class="text-sm sm:text-base">
+      © 2024 Wooley. All rights reserved.
+    </p>
+    <div id="footer-socials" class="flex gap-6 text-2xl">
+      <a id="footer-link-1" href="#" aria-label="Facebook" class="hover:opacity-80 transition"><i class="fab fa-facebook"></i></a>
+      <a id="footer-link-2" href="#" aria-label="Twitter" class="hover:opacity-80 transition"><i class="fab fa-twitter"></i></a>
+      <a id="footer-link-3" href="#" aria-label="Instagram" class="hover:opacity-80 transition"><i class="fab fa-instagram"></i></a>
+      <a id="footer-link-4" href="#" aria-label="LinkedIn" class="hover:opacity-80 transition"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+</body></html>
